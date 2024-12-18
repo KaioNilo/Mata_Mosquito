@@ -1,0 +1,167 @@
+html {
+    cursor: url(img/raquete.png) 30 30, auto;
+}
+
+body {
+    background: url(img/bg_1.png) no-repeat top center fixed;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#mini-logo {
+    top: 20px;
+    width: 130px;
+    height: 100px;
+}
+
+.logo-index {
+    margin-top: 3em;
+    width: 430px;
+    height: 400px;
+}
+
+#btn-vitoria {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+#btn-vitoria button:first-child{
+    margin-right: 1em;
+}
+
+
+select {
+    width: 180px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 10px;
+    color: rgb(155, 77, 4);
+    border: 2px solid rgb(155, 77, 4);
+    box-shadow: #382303 1px 1px 3px;
+    font-weight: bold;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+
+select:hover {
+    background-color: rgb(155, 77, 4);
+    color: orange;
+    border: 2px solid orange;
+}
+
+select:active {
+    background-color: rgb(155, 77, 4);
+    color: orange;
+    border: 2px solid orange;
+}
+
+select option {
+    font-weight: bold;
+}
+
+select option:hover {
+    background-color: rgb(155, 77, 4);
+    font-weight: bold;
+}
+
+select option:first-child {
+    color: rgb(155, 77, 4);
+}
+
+.orange {
+    color: orange;
+}
+
+.mosquito1 {
+    width: 12%;
+}
+
+.mosquito2 {
+    width: 18%;
+}
+
+.mosquito3 {
+    width: 9%;
+}
+
+.ladoA {
+    transform: scaleX(1);
+}
+
+.ladoB {
+    transform: rotate(45deg);
+}
+
+.ladoC {
+    transform: rotate(280deg);
+}
+
+.painel {
+    position: absolute;
+    width: 220px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 0.7;
+    color: #fff;
+    border-radius: 10px;
+    margin: auto auto 20px 20px;
+    font-weight: bolder;
+}
+
+.vidas img {
+    width: 25px;
+    height: 25px;
+    margin: 3px 5px 5px 5px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-over {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+
+.container button {
+    width: 180px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: 8em;
+    background-color: orange;
+    border-radius: 10px;
+    color: rgb(155, 77, 4);
+    border: 2px solid rgb(155, 77, 4);
+    box-shadow: #382303 1px 1px 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container button:hover {
+    background-color: rgb(155, 77, 4);
+    color: orange;
+    border: 2px solid orange;
+}
+
+.container button:active {
+    background-color: rgb(155, 77, 4);
+    color: orange;
+    border: 2px solid orange;
+}
+
+#cronometro {
+    font-size: 22px;
+    margin-left: 1em;
+}

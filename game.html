@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Mata Mosquito</title>
+    <script script src="game.js"></script>
+</head>
+<body onresize="responsividadePalco()">
+
+    <div class="container">
+
+        <img class="mb-auto" id="mini-logo" src="img/game-mata-mosquito.png" alt="">
+
+        <div class="painel">
+            <div class="vidas">
+                <img id="v1" src="img/coraçaocheio.png" alt="">
+                <img id="v2" src="img/coraçaocheio.png" alt="">
+                <img id="v3" src="img/coraçaocheio.png" alt="">
+                <img id="v4" src="img/coraçaocheio.png" alt="">
+                <img id="v5" src="img/coraçaocheio.png" alt="">
+            </div>
+            
+            <div class="cronometro">
+                Tempo restante:  <span id="cronometro"></span>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script>
+
+        document.getElementById('cronometro').innerHTML = tempo;
+
+        //Criação e remoção do mosquito num determinado tempo
+        let criaMosquito = setInterval(function( ) {
+            posicaoRandomica();
+        }, criacaoTempo);
+
+    </script>
+    
+</body>
+</html>

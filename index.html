@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Mata Mosquito</title>
+    <script>
+
+        function iniciarGame() {
+            let nivel = document.getElementById('niveis').value;
+
+            if (nivel === '') {
+                alert('Selecione um Nível para iniciar o jogo');
+                return false
+            }
+            //definindo o parâmetro do nível
+            window.location.href = 'game.html?' + nivel;           
+
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+
+    <div class="container">
+    
+        <img class="mt-auto logo-index" src="img/logo-game_1.png" alt="">
+        
+        <select class="mb-3 text-center" name="" id="niveis">
+            <option id="first" value="">ESCOLHA O NÍVEL</option>
+            <option value="facil">FÁCIL</option>
+            <option value="medio">MÉDIO</option>
+            <option value="dificil">DIFÍCIL</option>
+        </select>
+
+        <button onclick="iniciarGame()">Iniciar</button>
+    
+    </div>
+
+</body>
+</html>
